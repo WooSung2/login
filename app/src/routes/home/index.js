@@ -12,4 +12,5 @@ const ctrl = require("./home.ctrl");
 router.get("/", ctrl.hello);
 router.get("/login", ctrl.login); // 명확하게 보여주기 위해
 
+
 module.exports = router;

@@ -12,10 +12,18 @@ loginBtn.addEventListener("click", login);
 
 function login(){
     const req = {
-        id : id.value,
+        id : id.value, //객체일땐 id =이아닌 id:로
         psword : psword.value,
     };
-    console.log(req);
+
+
+    fetch("/login", {
+        method : "POST", //body를 통해 데이터를 전달할떄 http메서드 중 POST 사용 restAPI 관련
+        headers : {
+            "Content-type" : "application/json",
+        },
+        body: JSON.stringify(req) //object를 문자열로 바꿔준다
+    })
+
 }
 
-// console.log(id);
