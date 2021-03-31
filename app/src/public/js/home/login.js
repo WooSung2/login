@@ -24,6 +24,8 @@ function login(){
         },
         body: JSON.stringify(req) //object를 문자열로 바꿔준다
     })
+        .then((res) => res.json())
+        .then((res) => {})
 
 }
 
