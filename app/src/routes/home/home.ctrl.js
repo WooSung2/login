@@ -15,6 +15,9 @@ const output = {
     login :  (req,res)=>{  //컨트롤러 --> MVC로 따로 빼주다?
         res.render("home/login");
     },
+    register: (req, res) => {
+        res.render("home/register");
+    },
 };
 
 
