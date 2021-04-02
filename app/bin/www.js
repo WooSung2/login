@@ -1,3 +1,6 @@
+// ****** bin안에 --> app.js 실행 파일
+
+
 "use strict";
 
 const app = require("../app")
