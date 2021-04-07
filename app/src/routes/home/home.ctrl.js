@@ -22,10 +22,10 @@ const output = {
 
 
 const process = {
-    login: (req, res) => {
+    login: async (req, res) => {
         const user = new User(req.body); //user라는 클래스를 인스턴스화 req.body : 클라이언트가 요청한.
                 // 얘는 User.js에서 body를 들고다닌다.
-        const response = user.login(); //User.js의 login 메서드를 가져옴
+        const response = await user.login(); //User.js의 login 메서드를 가져옴
         return res.json(response);
     },
 
